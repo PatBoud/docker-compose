@@ -13,10 +13,11 @@ services:
       - "80:80/tcp"
       - "443:443/tcp"
     environment:
+      # Le mot de passe adminstrateur
       WEBPASSWORD: 'XXXXXX'
     volumes:
-      - './data/pihole/:/etc/pihole/'
-      - './data/dnsmasq.d/:/etc/dnsmasq.d/'
+      - './pihole/:/etc/pihole/'
+      - './dnsmasq.d/:/etc/dnsmasq.d/'
       - '/etc/localtime:/etc/localtime:ro'
     dns:
       - 127.0.0.1
