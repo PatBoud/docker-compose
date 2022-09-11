@@ -1,1 +1,0 @@
-Ce dossier contiendra les fichiers de données de MySQL
